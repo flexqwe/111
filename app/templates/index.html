@@ -21,9 +21,9 @@
         <nav class="menu" aria-label="Main navigation">
           <a href="index.html">Asosiy sahifa</a>
           <a href="{% url 'courses' %}">Kurslarimiz</a>
-          <a href="mentors.html">Mentorlarimiz</a>
-          <a href="portfolio.html">Portfolio</a>
-          <a href="team.html">Jamoa</a>
+          <a href="{% url 'mentor' %}">Mentorlarimiz</a>
+          <a href="{% url 'portfolio' %}">Portfolio</a>
+          <a href="{% url 'team' %}">Jamoa</a>
         </nav>
 
         <a class="phone" href="tel:+998787777777">

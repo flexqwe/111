@@ -19,6 +19,10 @@ class Kurslar(models.Model):
     title = models.CharField()
     information = models.TextField()
 class Portfolio(models.Model):
+    image = models.ImageField()
+    title = models.CharField()
+    author = models.CharField()
+    image_author = models.ImageField(null=True, blank=True)
 
     def __str__(self):
-        return self.name
+        return self.title  # Было self.name, что и вызывало ошибку
